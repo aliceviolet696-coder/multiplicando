@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora del Futuro</title>
+    
+    <link rel="stylesheet" href="multiplicar.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="cyber-background"></div>
+
+    <div class="calculator-card">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+        </div>
+
+        <h1 class="main-title">CALCULADORA<br><span class="gradient-text">DEL FUTURO</span></h1>
+        <p class="subtitle">INGRESA UN NÚMERO Y DESCUBRE SU TABLA DINÁMICA</p>
+
+        <div class="dots-decorator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="input-row">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-cube input-icon"></i>
+                <input type="number" id="numberInput" placeholder="Escribe un número..." min="1" max="9999">
+            </div>
+            <button id="calculateBtn" class="btn-calculate">
+                CALCULAR <i class="fa-solid fa-angles-right"></i>
+            </button>
+        </div>
+
+        <div class="result-panel">
+            <div class="panel-border-corner top-left"></div>
+            <div class="panel-border-corner bottom-right"></div>
+            
+            <div id="placeholderContent" class="placeholder-content">
+                <div class="atom-icon">
+                    <i class="fa-solid fa-atom"></i>
+                </div>
+                <p>Tu tabla de multiplicar aparecerá aquí</p>
+            </div>
+
+            <div id="tableOutput" class="table-output hidden"></div>
+        </div>
+
+        <div class="card-footer">
+            <span class="line"></span>
+            <p>TECNOLOGÍA • INNOVACIÓN • FUTURO</p>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <script src="multiplicar.js"></script>
+</body>
+</html>
